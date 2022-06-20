@@ -13,14 +13,17 @@ const routesV1 = require('./auth/routes/v1');
 const routesV2 = require('./auth/routes/v2');
 
 const app = express();
+app.get("/", (req, res) => {
+    res.status(200).send("server is working");
+  });
 
 app.use(cors());
 app.use(morgan('dev'));
 app.use(logger);
 
-app.get("/", (req, res) => {
-    res.send("welcome to our store page");
-})
+// app.get("/", (req, res) => {
+//     res.send("welcome to our store page");
+// })
 
 app.use(express.json());
 app.use(express.urlencoded({
@@ -45,3 +48,4 @@ module.exports = {
         app.listen(port, () => console.log(`Listening on ${port}`));
     },
 };
+

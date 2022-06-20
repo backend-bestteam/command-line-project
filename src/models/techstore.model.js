@@ -17,3 +17,4 @@ const techStoreModel = (sequelize, DataTypes) =>
     });
 
 module.exports = techStoreModel;
+
