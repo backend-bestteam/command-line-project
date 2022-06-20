@@ -8,6 +8,6 @@
 
 [Heroku app](https://command-line-project.herokuapp.com/)
 
-[Actions]()
+[Actions](https://github.com/backend-bestteam/command-line-project/actions)
 
-[pull request]()
+[pull request](https://github.com/backend-bestteam/command-line-project/pull/3)
