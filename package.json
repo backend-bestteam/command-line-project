@@ -1,0 +1,42 @@
+{
+  "name": "command-line-project",
+  "version": "1.0.0",
+  "description": "A command line application that lets you enter a note (a sentence) and stores it to a database, and later get a list of your notes",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "test": "NODE_ENV=test jest --coverage",
+    "init:config": "sequelize init:config",
+    "db:create": "sequelize db:create",
+    "watch": "NODE_ENV=development nodemon index.js",
+    "test:watch": "NODE_ENV=test jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backend-bestteam/command-line-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/backend-bestteam/command-line-project/issues"
+  },
+  "homepage": "https://github.com/backend-bestteam/command-line-project#readme",
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "bcrypt": "^5.0.1",
+    "cros": "^1.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-bearer-token": "^2.4.0",
+    "jest": "^28.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
+    "pg": "^8.7.3",
+    "sequelize": "^6.21.0",
+    "sequelize-cli": "^6.4.1",
+    "sqlite3": "^5.0.8"
+  }
+}
