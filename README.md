@@ -1,2 +1,13 @@
 # command-line-project
-A command line application that lets you enter a note (a sentence) and stores it to a database, and later get a list of your notes
+
+## UML diagram
+
+![UML diagram](./assets/lab9.png)
+
+## links related to the project
+
+[Heroku app](https://command-line-project.herokuapp.com/)
+
+[Actions]()
+
+[pull request]()
