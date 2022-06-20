@@ -1,5 +1,5 @@
 'use strict';
-
+require("dotenv").config();
 process.env.SECRET = "TEST_SECRET";
 
 const {db} = require('../src/models/index.model');
