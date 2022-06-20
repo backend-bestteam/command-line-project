@@ -8,6 +8,7 @@
 
 4- admin: ['read', 'create', 'update', 'delete'] from the techStore table
 
+
 ## UML diagram
 
 ![UML diagram](./assets/lab9.png)
