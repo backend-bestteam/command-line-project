@@ -3,7 +3,7 @@
 const express = require('express');
 const authRouter = express.Router();
 
-const {users} = require('./models/users-model');
+const {users} = require('../models/index.model');
 
 const basicAuth = require('./middleware/basic')
 const bearerAuth = require('./middleware/bearer')
@@ -42,4 +42,3 @@ authRouter.get('/secret', bearerAuth, async (req, res, next) => {
 });
 
 module.exports = authRouter;
-

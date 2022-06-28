@@ -1,5 +1,6 @@
 # tech Store
 
+
 1-user: ['read'] from the techStore table,
 
 2- writer: ['read', 'create'] from the techStore table,
@@ -12,6 +13,14 @@
 ## UML diagram
 
 ![UML diagram](./assets/lab9.png)
+
+![1](./assets/lab91.png)
+
+![2](./assets/lab92.png)
+
+![3](./assets/lab93.png)
+
+![4](./assets//lab94.png)
 
 ## links related to the project
 
@@ -30,5 +39,4 @@
 3. GET /secret should require a valid bearer token
 
 4. GET /users should require a valid token and “delete” permissions
-
 
