@@ -17,3 +17,4 @@ const customersModel = (sequelize, DataTypes) =>
     });
 
 module.exports = customersModel;
+

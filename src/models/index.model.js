@@ -28,3 +28,4 @@ module.exports = {
     techstore: new Collection(techstore),
     users: userModel(sequelize, DataTypes),
 };
+

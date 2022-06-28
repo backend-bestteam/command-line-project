@@ -1,6 +1,5 @@
 # tech Store
 
-new changes
 
 1-user: ['read'] from the techStore table,
 
@@ -9,6 +8,7 @@ new changes
 3- editor: ['read', 'create', 'update'] from the techStore table,
 
 4- admin: ['read', 'create', 'update', 'delete'] from the techStore table
+
 
 ## UML diagram
 
@@ -39,3 +39,4 @@ new changes
 3. GET /secret should require a valid bearer token
 
 4. GET /users should require a valid token and “delete” permissions
+
