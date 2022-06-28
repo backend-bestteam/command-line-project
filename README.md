@@ -12,12 +12,13 @@ new changes
 
 ## UML diagram
 
-![UML diagram](./assets/lab9.png)
+added new images
 
+![UML diagram](./assets/lab9.png)
 ![1](./assets/lab91.png)
 ![2](./assets/lab92.png)
 ![3](./assets/lab93.png)
-![4](./assets//lab94.png)
+![4](./assets/lab94.png)
 
 ## links related to the project
 
