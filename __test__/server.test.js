@@ -26,7 +26,7 @@ describe('Auth Router', () => {
 
     it('Can create a new user', async () => {
         const response = await mockRequest.post('/signup').send(userData.testUser);
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(201);
     });
 
     it('Can signin with basic auth string', async () => {
@@ -36,7 +36,7 @@ describe('Auth Router', () => {
         } = userData.testUser;
         const response = await mockRequest.post('/signin')
             .auth(username, password);
-        expect(response.status).toBe(403);
+        expect(response.status).toBe(200);
     });
 
     it('Can signin with bearer auth token', async () => {
@@ -50,7 +50,7 @@ describe('Auth Router', () => {
         const bearerResponse = await mockRequest
             .get('/secret')
             .set('Authorization', `Bearer ${accessToken}`);
-        expect(bearerResponse.status).toBe(500);
+        expect(bearerResponse.status).toBe(200);
     });
     it('basic fails with known user and wrong password ', async () => {
 
@@ -101,31 +101,31 @@ describe('Auth Router', () => {
             version: '12',
             type: 'pro max'
         });
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(201);
     });
 
     // test if can read a techstore item
     it('can get all techstore items', async () => {
         const response = await mockRequest.get('/api/v1/techstore');
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(200);
 
     });
 
     // test if can read one techstore item
     it('can get one record', async () => {
         const response = await mockRequest.get('/api/v1/techstore/1');
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(200);
     });
 
     // test if can update a techstore item
     it('can update a record', async () => {
         const response = await mockRequest.put('/api/v1/techstore/1');
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(200);
     });
     // test if can delete a techstore item
     it('can delete a record', async () => {
         const response = await mockRequest.delete('/api/v1/techstore/1');
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(200);
     });
 
     //POST /api/v2/:model with a bearer token that has create permissions adds an item to the DB and returns an object with the added item
@@ -135,17 +135,17 @@ describe('Auth Router', () => {
             version: 'm1',
             type: 'air'
         });
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(201);
     });
     //GET /api/v2/:model with a bearer token that has read permissions returns an array of all items in the DB
     it('can get all techstore items', async () => {
         const response = await mockRequest.get('/api/v2/techstore').set('Authorization', `Bearer ${accessToken}`);
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(200);
     });
 
     it('can get one record', async () => {
         const response = await mockRequest.get('/api/v2/techstore/1').set('Authorization', `Bearer ${accessToken}`);
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(200);
     });
 
     it('can update a record', async () => {
@@ -159,7 +159,7 @@ describe('Auth Router', () => {
 
     it('can delete a record', async () => {
         const response = await mockRequest.delete('/api/v2/techstore/1').set('Authorization', `Bearer ${accessToken}`);
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(200);
     });
 });
 
